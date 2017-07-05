@@ -27,81 +27,60 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/libs/iConomy7.0.6.jar</systemPath>
 		</dependency>
-		<!-- MyPet -->
-		<dependency>
-			<groupId>de.Keyle.MyPet</groupId>
-			<artifactId>MyPet</artifactId>
-			<version>2.3.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/MyPet-2.3.0-SNAPSHOT.jar</systemPath>
-		</dependency>
 		<!-- McMMO -->
 		<dependency>
 			<groupId>com.gmail.nossr50.mcMMO</groupId>
 			<artifactId>mcMMO</artifactId>
-			<version>1.5.05-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/mcMMO-1.5.05-SNAPSHOT.jar</systemPath>
+			<version>1.5.04</version>
 		</dependency>
 		<!-- Vault -->
 		<dependency>
 			<groupId>net.milkbowl.vault</groupId>
-			<artifactId>Vault</artifactId>
-			<version>1.6.6</version>
-			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.bukkit</groupId>
-					<artifactId>bukkit</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.bukkit</groupId>
-					<artifactId>craftbukkit</artifactId>
-				</exclusion>
-			</exclusions>
+			<artifactId>vaultapi</artifactId>
+			<version>1.5.6</version>
 		</dependency>
-		<!-- MythicMobs -->
+		<!-- MyPet -->
 		<dependency>
-			<groupId>net.elseland.xikage</groupId>
-			<artifactId>MythicMobs</artifactId>
-			<version>2.4.5</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/MythicMobs-2.4.5.jar</systemPath>
+	    		<groupId>com.github.xXKeyleXx</groupId>
+	    		<artifactId>MyPet</artifactId>
+	    		<version>master-SNAPSHOT</version>
 		</dependency>
 		<!-- MythicMobs4 -->
 		<dependency>
-			<groupId>io.lumine.xikage.mythicmobs</groupId>
-			<artifactId>MythicMobs</artifactId>
-			<version>4.1.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/MythicMobs-4.1.0.jar</systemPath>
+			<groupId>net.elseland.xikage.MythicMobs</groupId>
+			<artifactId>mythicmobs</artifactId>
+			<version>4.0.1</version>
 		</dependency>
-		<!-- WorldGuard -->
+		<!-- MythicMobs -->
 		<dependency>
-			<groupId>com.sk89q</groupId>
+			<groupId>net.elseland.xikage.MythicMobs</groupId>
+			<artifactId>mythicmobs</artifactId>
+			<version>2.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sk89q.worldguard</groupId>
 			<artifactId>worldguard</artifactId>
+			<version>6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sk89q.worldedit</groupId>
+			<artifactId>worldedit</artifactId>
 			<version>6.1</version>
 		</dependency>
 	</dependencies>
 	<repositories>
-		<!-- WorldGuard -->
-		<repository>
-			<id>sk89q-repo</id>
-			<url>http://maven.sk89q.com/repo/</url>
-		</repository>
 		<!-- Spigot -->
 		<repository>
 			<id>spigot-repo</id>
 			<url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
 		</repository>
-		<!-- Vault -->
 		<repository>
-			<id>vault-repo</id>
-			<url>http://nexus.hc.to/content/repositories/pub_releases/</url>
+	 		<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 		<repository>
-			<id>mcmmo-repo</id>
-			<url>http://repo.mcmmo.org/</url>
+			<id>betonquest-repo</id>
+			<url>http://betonquest.betoncraft.pl/mvn</url>
 		</repository>
 	</repositories>
 	<!-- Builds Plugin -->
